@@ -237,7 +237,7 @@ window.onload = function()
 	}
 	
 	// Delete specific item by tapping on smiley face (to help mobile users)
-	
+	/*
 	function deleteMobile()
 	{
 		var checkBox = document.querySelectorAll('#checkbox');
@@ -274,7 +274,7 @@ window.onload = function()
 	
 	var smileyP = document.querySelector("footer").querySelector("p");
 	smileyP.addEventListener("click", deleteMobile);
-	
+	*/
 	
 	// Delete All Items using Logo
 	
