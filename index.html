@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> SwiftTally </title>
+	<meta name = "viewport" content = "width=device-width, maximum-scale=1.0, user-scalable=no">
+	<script src="https://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<link  type = "text/css" rel = "stylesheet" href = "styles.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<script src="jquery.ui.touch-punch.min.js"></script> 
+	<script type = "text/javascript" src = "Function.js"></script>
+	<meta charset = "UTF-8">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<style>
+		body 
+		{
+			font-family: 'Open Sans';
+		}
+	</style>
+	<script>
+		$(function() {
+			$( "#sortable" ).sortable({ 
+				placeholder: "ui-sortable-placeholder" 
+			});
+		});
+	</script>
+</head>	 
+	
+<body>
+
+	<!-- Navbar -->
+	
+	<nav class = "center">
+		<div id = "centerincenter">
+			<img id = "LOGO" src="Logo.png" alt="SwiftTally">
+		</div>
+	</nav> 
+	
+	<!-- Textbox that allows users to enter there notes into the to-do list app -->
+	<div class = "center" id = "note_entry">	
+		<div id = "centerincenter">
+			<input type = "text" id = "userinput" placeholder = "Insert Note Here..."> 
+			<button id = "push"> + </button> 
+		</div>
+	</div>
+	
+	<!-- Container that houses all to-do list items // The button is a placeholder -->
+	<ul id = "sortable">
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; <i> <b> Welcome to SwiftTally! </b> </i> <!-- ><br> Click the "+" or use the "Enter" key to add new items to your list. Arrange items by clicking and dragging. Double click on an item to delete it, or click on the emoji to delete all checked items. To delete all items, click on the "SwiftTally" logo. Happy list-making! --> &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; Write new items in the textbox &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; Click the "+" to add them to your list, or use the "Enter" key &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; Arrange items by clicking and dragging &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; Check off items to track your progress &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; Double click or click the "&#128465;" to delete items &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; Delete all items by clicking on the logo &nbsp;
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			<button class = "delete"> &#128465; </button>
+			 &nbsp; The more items you complete, the happier it will be! <i> ;) </i> &nbsp;
+		</li>
+		<!--
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam nisl, sagittis et lacinia sed, tempus et augue. In nec eros quis dolor volutpat mattis non eget quam. Etiam ultrices odio vel urna efficitur blandit. Nulla id dignissim risus, semper maximus orci. Curabitur dictum lectus a justo vulputate, ac sagittis odio laoreet. Curabitur risus ante, faucibus vel auctor vitae, pharetra suscipit orci. Ut laoreet ultricies aliquam. Sed suscipit eu velit vitae posuere.
+
+		</li>
+		<li class = "ui-state-default"> 
+			<input type = "checkbox" id = "checkbox" />
+			Run To the Wrold c up
+		</li>
+		-->
+	</ul>
+	
+	<footer>
+		<p id = "Smiley"> &#128526; </p>
+	</footer>
+
+</body>
+</html>
